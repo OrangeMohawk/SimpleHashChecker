@@ -224,6 +224,7 @@
             // 
             // MainForm
             // 
+            this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(390, 328);
@@ -250,6 +251,8 @@
             this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "Simple Hash Checker";
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.MainForm_DragDrop);
+            this.DragOver += new System.Windows.Forms.DragEventHandler(this.MainForm_DragOver);
             this.ResumeLayout(false);
             this.PerformLayout();
 
